@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  git-git:
+    image: gitea/gitea:latest  
+    restart: always
+    ports:
+      - '3000:3000'
+    volumes: 
+      - gitvolume:/data/
+volumes:
+  gitvolume:
+    driver: local
