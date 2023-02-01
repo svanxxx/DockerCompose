@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+  ldapnginx:
+    image: 6204931/ldapnginx
+    restart: always
+    ports:
+      - '8888:8888'
